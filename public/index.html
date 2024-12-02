@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhaar Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Aadhaar Verification</h1>
+    <form id="aadhaar-form">
+        <label for="aadhaar-number">Enter Aadhaar Number:</label>
+        <input type="text" id="aadhaar-number" name="aadhaar_number" required>
+        <button type="button" id="fetch-details">Fetch Details</button>
+    </form>
+
+    <div id="user-details" style="display: none;">
+        <h2>User Details</h2>
+        <p id="user-name"></p>
+        <p id="user-dob"></p>  <!-- Display Date of Birth -->
+        <p id="user-age"></p>
+        <p id="user-gender"></p>
+        <p id="user-address"></p>
+        <h3>User Image</h3>
+        <img id="user-image" alt="User Image" style="width: 200px; height: auto;" />
+    </div>
+
+    <div id="webcam-section" style="display: none;">
+        <video id="webcam" width="320" height="240" autoplay></video>
+        <canvas id="preview" style="display: none;"></canvas>
+        <br>
+        <button id="capture-button">Capture</button>
+        <button id="recapture-button" style="display: none;">Recapture</button>
+        <button id="verify-button" style="display: none;">Verify</button>
+    </div>
+
+    <p id="result-message"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
