@@ -5,8 +5,8 @@ import base64
 import sys
 
 # Replace with your Face++ API key and secret
-API_KEY = "GNQZjCipFpBKedYqq_11fNR3RBVwbBCg"
-API_SECRET = "V4spqzOLoG8YkVXw4gG9C-CL6RK-q6ml"
+API_KEY = "Enter Your Api Key"
+API_SECRET = "Enter Your secret Key"
 
 # API URLs
 FACE_DETECT_URL = "https://api-us.faceplusplus.com/facepp/v3/detect"
